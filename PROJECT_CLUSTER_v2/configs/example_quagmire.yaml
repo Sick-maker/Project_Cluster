@@ -1,0 +1,4 @@
+run_id: PC-EXAMPLE-QGM
+method: QGM
+constraints:
+  anchors_file: PROJECT_CLUSTER/data/anchors.json
