@@ -1,0 +1,28 @@
+{
+  "cipher": "K4",
+  "length": 97,
+  "anchors": [
+    {
+      "text": "EAST",
+      "start": 22,
+      "end": 25
+    },
+    {
+      "text": "NORTHEAST",
+      "start": 26,
+      "end": 34
+    },
+    {
+      "text": "BERLIN",
+      "start": 64,
+      "end": 69
+    },
+    {
+      "text": "CLOCK",
+      "start": 70,
+      "end": 74
+    }
+  ],
+  "indexing": "1-based inclusive",
+  "notes": "Self-maps permitted; do not mutate anchor texts."
+}

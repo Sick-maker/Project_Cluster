@@ -1,0 +1,19 @@
+run_id: PC-EXAMPLE-TPV
+method: TPV
+pre_layers:
+  - type: columnar_transposition
+    width: 9
+    key: BERLIN
+    read_order: top_down
+cipher_layer:
+  type: vigenere
+  mode: decrypt
+  keys: [KRYPTOS, PALIMPSEST, ABSCISSA, CLOCK]
+constraints:
+  anchors_file: PROJECT_CLUSTER/data/anchors.json
+  allow_nulls: 2
+scoring:
+  englishness_weight: 1.0
+  function_words_bonus: 0.2
+  clue_bonus: 0.1
+notes: Single transposition then Vigenère baseline.

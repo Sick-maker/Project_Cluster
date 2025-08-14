@@ -1,0 +1,22 @@
+run_id: PC-EXAMPLE-QGM
+method: QGM
+pre_layers:
+  - type: grid_route
+    grid: {rows: 10, cols: 10}
+    route: berlin_clock_columns
+    variant: natural
+    cycles: 4
+    tail: 1
+cipher_layer:
+  type: quagmire
+  variant: II
+  period: 8
+keys: [KRYPTOS, PALIMPSEST, ABSCISSA, BERLIN, CLOCK, BERLINCLOCK, SANBORN, SCHEIDT]
+constraints:
+  anchors_file: PROJECT_CLUSTER/data/anchors.json
+  allow_nulls: 2
+scoring:
+  englishness_weight: 1.0
+  function_words_bonus: 0.2
+  clue_bonus: 0.1
+notes: Baseline Quagmire sweep with Berlin Clock column order.
